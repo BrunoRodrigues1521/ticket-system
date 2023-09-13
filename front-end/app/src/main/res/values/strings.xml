@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Ticket System</string>
+
+    <string name="title_home">Home</string>
+    <string name="title_mytickets">My Tickets</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_activity_login">LoginActivity</string>
+
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_nif">Enter nif</string>
+    <string name="prompt_user_name">Enter email</string>
+    <string name="prompt_card_owner">Enter Username</string>
+    <string name="prompt_card_number">Enter Card NUmber</string>
+    <string name="prompt_card_expiration_date">Expiry Date</string>
+    <string name="prompt_card_cvc">CVC</string>
+
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="action_singup">Sign up</string>
+
+    <string name="invalid_username">Not a valid email</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="invalid_nif">Nif must be 9 characters long</string>
+    <string name="invalid_credit_card">Must be 16 characters long</string>
+    <string name="invalid_cvc">CVC must be 3 characters long</string>
+
+    <string name="login_failed">"Login failed"</string>
+    <string name="welcome_text">Welcome</string>
+
+    <string name="dont_have_an_account">Don´t have an account ?</string>
+    <string name="already_has_account">Already Have an Account ?</string>
+
+    <string name="dashboardPerformance">Performances</string>
+    <string name="dashboardTickets">Tickets</string>
+    <string name="qrcodeNumber">Scan the QRCODE</string>
+    <string name="goBack">Go Back</string>
+    <string name="receiptsValuePaid">Value Paid</string>
+    <string name="receiptsData">Date</string>
+    <string name="receiptsShowName">Show</string>
+    <string name="receiptsNif">Nif</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/performance_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerVertical="true"
+    tools:context=".ui.home.PerformanceDetailActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Details"
+                android:fontFamily="@font/dosis_bold"
+                android:textSize="@dimen/header_text_size"
+                android:textColor="@color/deep_blue"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/header_big_margins"
+                android:layout_marginLeft="@dimen/layout_inner_margins_small"
+                android:layout_marginBottom="20dp">
+            </TextView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="0dp"
+                >
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:src="@drawable/ic_home_black_24dp"
+                    android:scaleType="centerCrop">
+                </ImageView>
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:background="@drawable/card_item_style"
+                android:layout_margin="@dimen/layout_inner_margins_small"
+                android:elevation="0dp">
+
+
+                <LinearLayout
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/layout_inner_margins_small">
+                    <TextView
+                        android:id="@+id/pd_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Textview"
+                        android:textSize="20dp"
+                        android:textColor="@color/deep_blue"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/dosis_semibold"
+                        android:maxLines="2"
+                        android:ellipsize="end"
+                        android:layout_marginTop="@dimen/activity_vertical_margin"
+                        android:layout_marginBottom="@dimen/activity_vertical_margin">
+                    </TextView>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/activity_vertical_margin"
+                        android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+                        <ImageView
+                            android:layout_width="@dimen/round_icon_medium"
+                            android:layout_height="@dimen/round_icon_medium"
+                            android:scaleType="fitCenter"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_baseline_date_range_24"></ImageView>
+
+                        <TextView
+                            android:id="@+id/pd_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="20220-04-17"
+                            android:fontFamily="@font/dosis_semibold"
+                            android:textColor="@color/deep_blue"
+                            android:layout_marginLeft="@dimen/card_elements_margins"
+                            android:maxLines="2"
+                            android:ellipsize="end"></TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/activity_vertical_margin"
+                        android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+                        <ImageView
+                            android:layout_width="@dimen/round_icon_medium"
+                            android:layout_height="@dimen/round_icon_medium"
+                            android:scaleType="fitCenter"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_baseline_monetization_on_24"></ImageView>
+
+                        <TextView
+                            android:id="@+id/pd_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Porto"
+                            android:fontFamily="@font/dosis_semibold"
+                            android:textColor="@color/deep_blue"
+                            android:layout_marginLeft="@dimen/card_elements_margins"
+                            android:maxLines="2"
+                            android:ellipsize="end"></TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/location_group_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/activity_vertical_margin"
+                        android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+                        <ImageView
+                            android:layout_width="@dimen/round_icon_medium"
+                            android:layout_height="@dimen/round_icon_medium"
+                            android:scaleType="fitCenter"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_baseline_place_24"></ImageView>
+
+                        <TextView
+                            android:id="@+id/pd_location"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Porto"
+                            android:fontFamily="@font/dosis_semibold"
+                            android:textColor="@color/deep_blue"
+                            android:layout_marginLeft="@dimen/card_elements_margins"
+                            android:maxLines="2"
+                            android:ellipsize="end"></TextView>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Número de bilhetes"
+                            android:textColor="@color/deep_blue"
+                            android:fontFamily="@font/dosis_semibold"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"></TextView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center">
+                        <Button
+                            android:id="@+id/minusCounter"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:height="40dp"
+                            android:text="-" />
+
+                        <TextView
+                            android:id="@+id/counter"
+                            android:layout_width="23dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal|center_vertical"
+                            android:layout_weight="0"
+                            android:text="0"
+                            android:textColor="@color/deep_blue"
+                            android:textAlignment="center" />
+
+                        <Button
+                            android:id="@+id/plusCounter"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:height="40dp"
+                            android:text="+" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/buy_ticket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Buy Ticket"
+                android:layout_marginLeft="30dp"
+                android:stateListAnimator="@null"
+                android:drawableRight="@drawable/ic_baseline_arrow_forward_ios_24"
+                android:drawablePadding="2dip"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

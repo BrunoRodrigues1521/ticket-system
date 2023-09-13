@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_gravity="left"
+    android:layout_marginLeft="@dimen/layout_inner_margins_small"
+    android:layout_marginVertical="10dp">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/app_branding"></ImageView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="7dp"
+        android:layout_marginLeft="10dp"
+        android:text="TicketSYS"
+        android:textColor="@color/white"
+        android:fontFamily="@font/dosis_bold"
+        android:textSize="20dp"></TextView>
+
+</LinearLayout>
